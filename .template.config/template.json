@@ -1,10 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Henry",
-  "classifications": [
-    "Web",
-    "API"
-  ],
+  "classifications": ["Web", "API"],
   "identity": "Henry.CSharp.WebApi.Template.2",
   "name": "Henry's C# Web API Template 2",
   "shortName": "h-csharp-template",
@@ -12,5 +9,14 @@
   "tags": {
     "language": "C#",
     "type": "project"
-  }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [".git/**", "todo.md"]
+        }
+      ]
+    }
+  ]
 }
