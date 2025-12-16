@@ -13,9 +13,9 @@ public static class DotEnv
         // Special handling for test environment - navigate to the project root
         if (environmentName == "Test" && root.Contains("tests"))
         {
-            // From tests/QBallTests/bin/Debug/net[version], navigate to project root
+            // From tests/HenryCsharpTemplate.Tests/bin/Debug/net[version], navigate to project root
             var current = root;
-            while (current != null && !File.Exists(Path.Combine(current, "find-sports.sln")))
+            while (current != null && !File.Exists(Path.Combine(current, "HenryCsharpTemplate.sln")))
             {
                 current = Directory.GetParent(current)?.FullName;
             }

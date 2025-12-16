@@ -6,7 +6,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "scalar/v1 ",
-      "applicationUrl": "http://localhost",
+      "applicationUrl": "http://localhost:5051",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -16,7 +16,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "scalar/v1 ",
-      "applicationUrl": "https://localhost:7088;http://localhost",
+      "applicationUrl": "https://localhost:7088;",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

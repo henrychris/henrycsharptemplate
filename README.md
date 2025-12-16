@@ -12,7 +12,7 @@ This is a template for building C# Web API projects using .NET. It provides a so
 *   **Database:** Configured to use PostgreSQL by default, but can be easily changed to any other database supported by Entity Framework Core.
 *   **Settings Management:** Uses `appsettings.json` and environment variables for configuration, with strongly-typed settings classes.
 *   **Dependency Injection:** Makes extensive use of dependency injection for loose coupling and testability.
-*   **OpenAPI (Swagger):** Integrated with Swagger for API documentation and testing.
+*   **OpenAPI (Scalar):** Integrated with Scalar for API documentation and testing.
 *   **Hangfire:** Includes Hangfire for background job processing.
 *   **Rate Limiting:** Pre-configured with rate limiting to protect your API from abuse.
 *   **CORS:** CORS (Cross-Origin Resource Sharing) is configured to allow requests from your frontend applications.
@@ -69,7 +69,7 @@ The application is configured using an `.env` file.
     ```bash
     dotnet run
     ```
-3.  The API will be available at the URLs specified in `src/Properties/launchSettings.json`.
+3.  The API will be available at the URLs specified in `src/Properties/launchSettings.json`. To access the Scalar UI, navigate to `http://localhost:5051/scalar/v1`.
 
 ## Running Tests
 
@@ -94,3 +94,9 @@ The project is organized into the following layers:
 *   **`src/Infrastructure`**: Contains implementations of interfaces defined in the `Application` layer, such as data access, external services, and background jobs.
 *   **`src/HenryCsharpTemplate` (Web API)**: The entry point of the application, responsible for handling HTTP requests and responses.
 *   **`tests`**: Contains the test projects.
+
+## Architecture Reference
+
+- [How To Structure a Scalable .Net Application](https://dev.to/mashrulhaque/how-to-design-a-maintainable-net-solution-structure-for-growing-teams-284n)
+- [Vertical Slice Architecture](https://www.milanjovanovic.tech/blog/vertical-slice-architecture)
+- [Shared Logic in Vertical Slice Architecture](https://www.milanjovanovic.tech/blog/vertical-slice-architecture-where-does-the-shared-logic-live)

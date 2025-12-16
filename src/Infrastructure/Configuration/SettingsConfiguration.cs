@@ -25,6 +25,7 @@ internal static class SettingsConfiguration
     public static void SetupConfigFiles(this IServiceCollection services)
     {
         ConfigureSettings<DatabaseSettings>(services);
+        ConfigureSettings<AuthSettings>(services);
         Console.WriteLine("Secrets have been bound to classes.");
     }
 }

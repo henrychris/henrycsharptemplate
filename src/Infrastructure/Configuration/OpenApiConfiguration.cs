@@ -53,7 +53,7 @@ internal static class OpenApiConfiguration
         {
             options.DarkMode = false;
             options.HideModels = true;
-            options.WithTitle("QBall Api");
+            options.WithTitle("HenryCsharpTemplate Api");
         });
     }
 }
